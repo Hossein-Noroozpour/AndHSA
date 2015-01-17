@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hulixerian.andhsa" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".HsaSaleActivity"
+            android:label="@string/title_activity_sale" >
+        </activity>
+        <activity
+            android:name=".HsaDisplayMessageActivity"
+            android:label="@string/title_activity_display_message"
+            android:parentActivityName=".HsaSaleActivity"
+            android:theme="@style/MessageTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".HsaSaleActivity" />
+        </activity>
+        <activity
+            android:name=".HsaRegistrationFormActivity"
+            android:label="@string/title_activity_hsa_registration_form"
+            android:parentActivityName=".HsaSaleActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.hulixerian.andhsa.HsaSaleActivity" />
+        </activity>
+    </application>
+
+</manifest>
