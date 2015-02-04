@@ -29,5 +29,6 @@
     <string name="please_specify_your_username">Please specify your username!</string>
     <string name="please_specify_your_password">Please specify your password!</string>
     <string name="please_specify_your_password_confirm">Please specify your password confirmation!</string>
+    <string name="your_password_confirm_does_not_math">Your password confirmation does not match!</string>
 
 </resources>

@@ -93,6 +93,11 @@ public class HsaRegistrationFormActivity extends ActionBarActivity {
 		if (password == null) return;
 		String passwordConfirm = getStringInfo(R.id.password_confirm_edit_text, R.string.please_specify_your_password_confirm);
 		if (passwordConfirm == null) return;
+		if(password.equals(passwordConfirm))
+		{
+			showMessage(R.string.your_password_confirm_does_not_math);
+			return;
+		}
 	}
 
 	private String getStringInfo(int editTextID, int errorStringID) {
